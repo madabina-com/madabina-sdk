@@ -1,0 +1,33 @@
+{
+  "name": "madabina/sdk",
+  "description": "PHP client for the Madabina merchant REST API",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Madabina\\Sdk\\": "php/src/"
+    },
+    "classmap": ["php/src/"]
+  },
+  "archive": {
+    "exclude": [
+      "/.git",
+      "/.gitignore",
+      "/.tmp",
+      "/go",
+      "/javascript",
+      "/laravel",
+      "/scripts",
+      "/test",
+      "/package.json",
+      "/openapi.json",
+      "/php/composer.json",
+      "/php/phpunit.xml",
+      "/php/.phpunit.result.cache",
+      "/php/tests"
+    ]
+  }
+}
