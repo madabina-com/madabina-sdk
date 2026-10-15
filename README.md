@@ -11,8 +11,6 @@ This repository contains idiomatic clients for the Madabina merchant REST API:
 
 Each client covers authentication and token refresh, products, orders, customers, overview statistics, and push notification endpoints. Tokens are held in memory and remain under the consuming application's control.
 
-The repository-root `composer.json` publishes `madabina/sdk` from `php/src/`; the Composer archive excludes the other language clients. The Laravel adapter has its own Composer manifest in `laravel/` and must be published as a separate package repository or through a multi-package registry.
-
 ## API contract
 
 [`openapi.json`](openapi.json) is the canonical OpenAPI 3.0.3 contract. The Laravel application serves its byte-identical copy from `/api/openapi.json`; rebuild or check both copies with:
