@@ -2,9 +2,45 @@
 
 Standalone PHP client for the Madabina merchant REST API (PHP 8.2+).
 
-## Install from a local checkout
+## Installation
 
-Until the package is published, add the SDK path repository to your application's `composer.json`. For the Madabina monorepo layout, where the application and `sdk/` directory are siblings, use:
+The standalone Composer repository is [madabina-php-sdk](https://github.com/madabina-com/madabina-php-sdk).
+
+### From Packagist
+
+After the package is published on Packagist, install it with:
+
+```sh
+composer require madabina/sdk
+```
+
+### Directly from GitHub
+
+Before Packagist publication, Composer can install the `main` branch directly. Add this repository and requirement to your application's `composer.json`:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/madabina-com/madabina-php-sdk.git"
+    }
+  ],
+  "require": {
+    "madabina/sdk": "dev-main"
+  }
+}
+```
+
+Then run:
+
+```sh
+composer update madabina/sdk
+```
+
+### From a local monorepo checkout
+
+For local development in the Madabina monorepo layout, where the application and `sdk/` directory are siblings, add the SDK path repository to your application's `composer.json`:
 
 ```json
 {
