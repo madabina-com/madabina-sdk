@@ -1,0 +1,13 @@
+{
+  "name": "@madabina/sdk",
+  "version": "0.1.0",
+  "description": "Typed JavaScript and TypeScript client for the Madabina REST API",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "import": "./src/index.js" }
+  },
+  "types": "./src/index.d.ts",
+  "files": ["src", "README.md"]
+}

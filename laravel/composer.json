@@ -1,0 +1,22 @@
+{
+  "name": "madabina/laravel-sdk",
+  "description": "Laravel integration for the Madabina REST SDK",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "illuminate/http": "^12.0",
+    "illuminate/support": "^12.0",
+    "madabina/sdk": "^0.1"
+  },
+  "autoload": {
+    "psr-4": { "Madabina\\Laravel\\": "src/" }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["Madabina\\Laravel\\MadabinaServiceProvider"],
+      "aliases": { "Madabina": "Madabina\\Laravel\\Facades\\Madabina" }
+    }
+  },
+  "minimum-stability": "stable"
+}

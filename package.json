@@ -1,0 +1,13 @@
+{
+  "name": "madabina-sdk-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo for Madabina REST SDKs",
+  "workspaces": ["javascript"],
+  "scripts": {
+    "test": "npm run check:openapi && node test/contract.test.mjs && npm run test:javascript",
+    "test:javascript": "node javascript/test/client.test.mjs",
+    "test:contract": "node test/contract.test.mjs",
+    "check:openapi": "python scripts/build_openapi.py --check"
+  }
+}
